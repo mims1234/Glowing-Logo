@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Red Rose';
+    font-weight: 700;
+    color:white;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.color-text{
+    position: relative;
+    display:flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    text-align: center;
+    color:black;
+    width:100%;
+    background: #00ff00;
+    font-size: 40px;
+}
+
+.main{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+span{
+    font-size: 80px;
+}
+
+#gen{
+    position: absolute;
+    color:gold;
+    right:60%;
+    top:37%;
+}
+
+#X{
+    position: absolute;
+    font-size: 200px;
+    text-shadow: 0 0 50px #00ff00,
+                 0 0 100px #00ff00,
+                 0 0 150px #00ff00,
+                 0 0 200px #00ff00,
+                 0 0 250px #00ff00;
+    top:29%;
+    cursor: pointer;
+    animation: ani 5s ease infinite;
+}
+
+#club{
+    position: absolute;
+    color:gold;
+    left:60%;
+    top:37%;
+}
+
+@keyframes ani 
+{
+    0%{
+        filter: hue-rotate(0deg)
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
